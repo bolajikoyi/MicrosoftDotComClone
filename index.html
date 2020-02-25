@@ -11,6 +11,10 @@
     <title>Microsoft Oficial Homepage</title>
 </head>
 <body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
     <div class="container">
     <!-- Nav -->
     <nav class="main-nav">
@@ -202,7 +206,7 @@
     </div>
     <div class="footer">
         <div class="footer-inner">
-            <div><i class="fas fa-globe fa-2x"></i>English (United States) <i class="fas fa-chevron-down"></i></div>
+            <div id="language"><i class="fas fa-globe fa-2x"></i>English (United States) <i class="fas fa-chevron-down"></i></div>
             <ul>
                 <li><a href="#">Sitemap</a></li>
                 <li><a href="#">Contact Microsoft</a></li>
@@ -216,5 +220,10 @@
         </div>
 
     </div>
+    <script>
+    document.querySelector('.menu-btn').addEventListener
+('click', () => document.querySelector('.main-menu').classList.toggle('show'))
+// we listen for a click event when class="menu-btn" is clicked, the class="main-menu show" is toggled
+    </script>
 </body>
 </html>
